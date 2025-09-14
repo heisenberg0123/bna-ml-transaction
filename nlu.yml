@@ -1,0 +1,120 @@
+
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey there
+      - good morning
+      - hi there
+      - hey
+      - greetings
+  - intent: count_entities
+    examples: |
+      - how many employees are there [employees](entity_type)
+      - number of employees [employees](entity_type)
+      - count of employees [employees](entity_type)
+      - how many materials are available [materials](entity_type)
+      - number of materials [materials](entity_type)
+      - count materials [materials](entity_type)
+      - how many transactions [transactions](entity_type)
+      - number of transactions [transactions](entity_type)
+      - count transactions [transactions](entity_type)
+      - tell me the total employees [employees](entity_type)
+      - how many workers [employees](entity_type)
+      - what's the material count [materials](entity_type)
+      - transaction count [transactions](entity_type)
+      - total number of staff [employees](entity_type)
+      - material total [materials](entity_type)
+  - intent: explain_type
+    examples: |
+      - what’s urgent type [urgent](type)
+      - explain high_value [high_value](type)
+      - tell me about standard type [standard](type)
+      - what does urgent mean [urgent](type)
+      - describe high_value type [high_value](type)
+      - explain standard [standard](type)
+      - what is the urgent type [urgent](type)
+      - tell me about high_value [high_value](type)
+      - what’s the meaning of standard [standard](type)
+      - define urgent transaction [urgent](type)
+      - explain what high_value is [high_value](type)
+      - describe standard transaction [standard](type)
+  - intent: current_date
+    examples: |
+      - what’s the day today
+      - today’s date
+      - what is the current date
+      - tell me today’s date
+      - what day is it
+      - current date
+      - what’s today
+      - what is today’s date
+      - tell me the date today
+      - what day are we on
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - talk to you later
+      - bye bye
+      - farewell
+  - intent: bot_challenge
+    examples: |
+      - are you a bot
+      - who are you
+      - what are you
+      - are you human
+      - what’s your identity
+      - are you a robot
+  - intent: mood_great
+    examples: |
+      - I'm happy
+      - Feeling great
+      - I'm in a good mood
+      - I’m super excited
+      - Things are going well
+      - I’m feeling awesome
+      - Really happy today
+      - I’m thrilled
+  - intent: mood_unhappy
+    examples: |
+      - I'm sad
+      - Feeling down
+      - Not in a good mood
+      - I’m upset
+      - Things aren’t going well
+      - I’m feeling low
+      - Pretty sad today
+      - I’m depressed
+  - intent: affirm
+    examples: |
+      - yes
+      - sure
+      - okay
+      - yeah
+      - absolutely
+      - definitely
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+      - nah
+      - not at all
+      - no way
+  - regex: entity_type
+    examples: |
+      - employees
+      - materials
+      - transactions
+      - staff
+      - workers
+      - material
+  - regex: type
+    examples: |
+      - urgent
+      - high_value
+      - standard
